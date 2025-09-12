@@ -1,8 +1,10 @@
+using ApiGateway.Controllers;
 using ApiGateway.Data;
 using ApiGateway.Services.AuthService;
 using ApiGateway.Services.ProdutoService;
 using ApiGateway.Services.Rabbit;
 using ApiGateway.Services.SenhaService;
+using ApiGateway.Services.VendaService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -21,6 +23,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IAuthInterface, AuthService>();
 builder.Services.AddScoped<ISenhaInterface, SenhaService>();
 builder.Services.AddScoped<ProdutoService>();
+builder.Services.AddScoped<IVendaService,VendaService>();
+builder.Services.AddSingleton<IRabbitMQPublisher, RabbitMQPublisher>();
 builder.Services.AddHostedService<RabbitMQConsumer>();
 
 

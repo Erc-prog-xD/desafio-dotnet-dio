@@ -10,5 +10,9 @@ namespace ApiGateway.Data
         }
         public DbSet<Client> Client { get; set; }
         public DbSet<Product> Produto { get; set; }
+        public DbSet<Pedidos> Pedido { get; set; }
+
+        public DbSet<PedidoHistoricStatus> PedidoHistoricStatus { get; set;}
+        public DbSet<Notification> notifications { get; set;  }
     }
 }

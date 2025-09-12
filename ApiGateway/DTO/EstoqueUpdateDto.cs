@@ -1,8 +1,7 @@
 ﻿namespace ApiGateway.DTO
 {
-    public class EstoqueUpdateDto
+    public class EstoqueUpdateDTO
     {
-        public int ProductId { get; set; }
-        public int Quantity { get; set; }
+       public int PedidoId { get; set; }
     }
 }
