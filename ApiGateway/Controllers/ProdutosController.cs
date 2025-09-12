@@ -20,6 +20,7 @@ namespace ApiGateway.Controllers
             _produtoService = produtoService;
         }
 
+        [Authorize]
         [HttpPost("RegistrarProduto")]
         public async Task<ActionResult<Response<string>>> registerProductAsync(Product produto)
         {
@@ -27,6 +28,7 @@ namespace ApiGateway.Controllers
             return Ok(response);
         }
 
+        [Authorize]
         [HttpGet("ConsultarProdutos")]
         public async Task<ActionResult<Response<List<Product>>>> GetProducts([FromQuery] int? id, [FromQuery] string? name, [FromQuery] decimal? price)
         {
