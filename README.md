@@ -31,7 +31,7 @@
 - Instale as dependências
 - Ao configurar o SQL, vá ao console e faça: add-migration {qualquer nome} depois faça update-migration. (Isso fará subir as tabelas no banco de dados)
 - Rode a imagem do rabbit no docker
-- Com tudo configurado execute o projeto e faça a execução das APIs no swagger
+- Com tudo configurado execute o projeto e faça a execução das APIs no swagger (use o comando .dotnet run)
 
 ## 📊 Estrutura das Entidades
 # Client
