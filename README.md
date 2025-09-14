@@ -4,7 +4,7 @@
 
 - ASP.NET Core Web API
 - Entity Framework Core
-- RabbitMQ
+- RabbitMQ (Login: guest , Password: guest)
 - SQL Server
 - Docker / Docker Compose
 
